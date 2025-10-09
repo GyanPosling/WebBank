@@ -24,9 +24,5 @@ public class AccountValidator implements Validator {
         if (account.getBalance() == null || account.getBalance().compareTo(java.math.BigDecimal.ZERO) < 0) {
             errors.rejectValue("balance", "Баланс не может быть отрицательным");
         }
-
-        if (account.getCurrency() == null || account.getCurrency().trim().isEmpty()) {
-            errors.rejectValue("currency", "Валюта счета обязательна");
-        }
     }
 }

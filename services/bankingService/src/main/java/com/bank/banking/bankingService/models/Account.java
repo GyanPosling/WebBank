@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "users")
+@Table(name = "accounts")
 @Data
 public class Account {
     @Id
@@ -22,7 +22,7 @@ public class Account {
     private Long userId;
 
     @Enumerated(EnumType.STRING)
-    private AccountType accontType;
+    private AccountType accountType;
 
     private BigDecimal balance;
 
