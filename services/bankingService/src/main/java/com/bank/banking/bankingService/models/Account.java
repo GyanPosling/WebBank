@@ -24,6 +24,7 @@ public class Account {
     @Enumerated(EnumType.STRING)
     private AccountType accountType;
 
+    @Column(name = "balance")
     private BigDecimal balance;
 
     private LocalDateTime createdAt;

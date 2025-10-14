@@ -2,6 +2,7 @@ package com.bank.notification.notificationService.models;
 
 
 import com.bank.notification.notificationService.models.enums.NotificationType;
+
 import jakarta.persistence.*;
 import lombok.Data;
 
